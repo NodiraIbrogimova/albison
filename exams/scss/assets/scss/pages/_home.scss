@@ -1,0 +1,313 @@
+@import '../mixins';
+
+header {
+    .uk-slideshow-items {
+        position: relative;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.5);
+            /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            padding: 120px 20px;
+
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+.about-us {
+    .content-header {
+        font-size: 95px;
+        font-weight: 100;
+        color: inherit;
+    }
+
+    .content-description {
+        font-size: 18px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    a {
+        text-decoration: initial;
+        color: inherit;
+    }
+
+    .few-words {
+        padding: 140px 20%;
+        text-align: center;
+        background-color: rgb(44, 45, 46);
+        color: rgb(255, 255, 255);
+
+        .btn {
+            @include button(rgb(234, 32, 46), rgb(255, 255, 255));
+            margin-top: 57px;
+        }
+    }
+
+    .items {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ea1f2e;
+
+            figure {
+                width: 50%;
+                margin: 0;
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-description {
+                width: 50%;
+                margin: 0;
+
+                display: flex;
+                flex-direction: column;
+
+                padding: 0 48px;
+
+                .content-header {
+                    color: rgb(255, 255, 255);
+                }
+
+                .content-description {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+
+                .btn {
+                    @include button(rgb(255, 255, 255), rgb(44, 45, 46));
+                    width: fit-content;
+                    margin: 57px auto auto;
+                }
+            }
+        }
+
+        .item:nth-child(2) {
+            flex-direction: row-reverse;
+            background-color: rgb(44, 45, 46);
+        }
+    }
+
+
+}
+
+.advantages {
+    text-align: center;
+    padding-top: 50px;
+
+    a {
+        color: #fff;
+    }
+
+    .content-header {
+        font-size: 95px;
+        font-weight: 300;
+
+        span {
+            font-weight: 900;
+        }
+    }
+
+    .cards {
+        .card {
+            figure {
+                width: 45%;
+            }
+        }
+    }
+
+    .card:nth-child(odd) {
+        .card__text {
+            text-align: right;
+        }
+
+        figure {
+            order: 1;
+        }
+    }
+
+    .card:nth-child(even) {
+        .card__text {
+            text-align: left;
+        }
+    }
+
+    .btn {
+        @include button(rgb(76, 78, 80), #fff);
+        margin-bottom: 100px;
+    }
+
+}
+
+.our-services {
+    background-image: url(../images/image-services-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        padding-top: 100px;
+        font-size: 95px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+    }
+
+    .cards {
+
+        .card {
+            background-color: rgba(234, 32, 46, 0.8);
+            gap: 0;
+            display: flex;
+
+            figure {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__text {
+                padding: 30px 40px;
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: rgb(255, 255, 255);
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .uk-slideshow-items {
+            .content {
+                height: auto;
+
+                .section-wrapper {
+                    max-width: 100%;
+                }
+
+                .content-description {
+                    display: none;
+                }
+
+                .content-header {
+                    font-size: 38px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+    .about-us {
+        .items {
+            .item {
+                display: block;
+
+                figure {
+                    width: 100%;
+                }
+
+                &-description {
+                    padding: 50px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .advantages {
+
+        .cards {
+            display: block;
+
+            .card {
+                display: block;
+
+                figure {
+                    width: 100%;
+
+                    img {
+                        width: 130px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            .card:nth-child(odd) {
+
+                .card__text {
+                    text-align: center;
+                }
+
+                figure {
+                    order: initial;
+                }
+            }
+
+            .card:nth-child(even) {
+
+                .card__text {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+
+    .our-services {
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+
+                &__text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+}

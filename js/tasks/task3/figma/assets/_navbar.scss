@@ -1,0 +1,136 @@
+@import './variables';
+
+.nav {
+    &__wrapper {
+        max-width: 95%;
+        margin: 0 auto;
+
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        figure {
+            img {
+                max-height: 80%;
+                width: 80%;
+            }
+        }
+    }
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    label {
+        order: 3;
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.nav-items {
+        left: 2.5%;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.2rem;
+    }
+
+    &-item {
+        line-height: 21.09px;
+        font-size: 1.8rem;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    &-link {
+
+        &--logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            color: white;
+            gap: 1.5rem;
+            font-size: 2.8rem;
+            line-height: 32.81px;
+            letter-spacing: 1%;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+            transition: 0.5ms ease;
+        }
+    }
+}
+
+// @media (max-width: 960px) {
+//     .nav {
+//         &-item {
+//             font-size: .9rem;
+//         }
+//     }
+// }
+
+@media (max-width: 620px) {
+
+    .nav {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 0;
+
+        &__wrapper {
+            justify-content: initial;
+
+            figure {
+                margin-left: auto;
+            }
+        }
+
+        label {
+            display: initial;
+            margin-left: 2rem;
+
+            span {
+                display: block;
+                width: 3rem;
+                height: 1rem;
+
+                color: white;
+
+                &:first-child {
+                    border-bottom: 1px solid white;
+                }
+
+                &:last-child {
+                    border-top: 1px solid white;
+                    margin-top: 1rem;
+                }
+
+            }
+        }
+
+        &-items {
+            justify-content: initial;
+            background-color: $color-primary;
+            padding: 2rem 2rem;
+            position: absolute;
+            width: 95%;
+            height: calc(100vh - 100%);
+            top: 100%;
+            left: -200%;
+            flex-direction: column;
+            transition: .6s ease-in-out;
+            z-index: 4;
+        }
+
+        &-item {
+            font-size: 1.5rem;
+        }
+    }
+}

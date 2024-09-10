@@ -1,0 +1,57 @@
+@import '../parts/navbar';
+@import '../parts/page-title';
+@import '../mixins';
+@import '../variables';
+@import '../parts/item';
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+
+    .btn {
+        @include button($bg-color: transparent, $color: $text-color, $border: 1px solid $text-color);
+        padding: 1.9rem 6rem;
+    }
+
+    .btn:first-child {
+        @include button($bg-color: $text-color, $color: #fff, $border: transparent);
+    }
+}
+
+.pagination {
+    margin-bottom: 10rem;
+
+    .btn-group {
+        text-align: center;
+
+        .btn {
+            padding: .9rem 1.6rem;
+            margin: 0 1rem;
+        }
+
+        .btn:first-child {
+            margin: initial;
+            @include button($bg-color: $text-color, $color: #fff, $border: transparent);
+        }
+
+        .btn:not(:first-child) {
+            @include button($bg-color: transparent, $color: $text-color, $border: 1px solid $text-color);
+        }
+    }
+
+}
+
+.shown-count {
+    margin: 6rem 0;
+    @include text(1.7rem, 500);
+    color: rgb(128, 128, 128);
+}
+
+@media (max-width: 768px) {
+    .categories {
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+}

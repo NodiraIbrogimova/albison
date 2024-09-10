@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./assets/uikit/css/uikit.min.css" />
+    <script src="./assets/uikit/js/uikit.min.js"></script>
+    <script src="./assets/uikit/js/uikit-icons.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/js/uikit.min.js"
+        integrity="sha512-uNdy6/b4kpAKQgC1MqDRW7HzGqmja6jPPfQ0Pv3q4f0r5XpL4cxPlgqgSbFT5pnLFo4BSFZX8Ve/ak0DDN06OA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/css/uikit-core-rtl.min.css"
+        integrity="sha512-+6D4TOLdOBhkuufbELpbCiGmD+Y4dzrNbSPGwtgGO2nf7Id3dM0x5R/Cw0bI/13pFUnsRL8pfpmKNWLbAx8fGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/css/uikit-core.min.css"
+        integrity="sha512-Up68klxaLGLgBXFtu9KAkcM0/b1Vv97wru/VabGokNEwbQN1RBjBtthqDgildf/8YCOKaaLvT5ZfIvVPom5dIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/js/uikit-icons.min.js"
+        integrity="sha512-Rrh7aqdTz7Q1BPfCdWCK3poag9FNK1HQJMbSdL/eRZwXkbS1EWlY5n2XJ70ZVh1ZLRIJEUoWxATps1cyzpGp/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="uk-navbar-container" uk-navbar style="background-color: cornflowerblue;">
+            <div class="uk-navbar-right">
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#" style="color: white">Home</a></li>
+                    <li>
+                        <a href="#" style="color: white">Account</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Login</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Report</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" style="color: white">Item</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow style="height: 500px;">
+        <ul class="uk-slideshow-items">
+            <li style="height: 500px;">
+                <img src="./assets/images/image.jpeg" alt="" uk-cover>
+            </li>
+            <li style="height: 500px;">
+                <img src="./assets/images/image.jpeg" alt="" uk-cover>
+            </li>
+            <li style="height: 500px;">
+                <img src="./assets/images/image.jpeg" alt="" uk-cover>
+            </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+    </div> -->
+
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Card1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-warning uk-card-body">
+                <h3 class="uk-card-title">Card 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Card 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-warning uk-card-body">
+                <h3 class="uk-card-title">Card 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Card5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Card 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-2@m" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./assets/images/image.jpeg" width="1800" height="1200" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Human</h3>
+                    <p>An average of 20 times every minute, your eyes blink. The tongue has roughly 8,000 taste buds,
+                        each of which can have up to 100 cells. In reality, earwax is a form of sweat.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Cat</h3>
+                    <p>Cats have a 6-times-their-height jump capacity. The average cat snoozes for 13 to 16 hours every
+                        day (roughly 70% of their life). A cat's lifespan is equivalent to 15 years in a person's life.
+                        A Maine Coon is one of the largest domestic cat breeds.</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="./assets/images/image.jpeg" width="1800" height="1200" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

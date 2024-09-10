@@ -1,0 +1,11 @@
+@mixin button($bg-color, $color) {
+    background-color: $bg-color;
+    color: $color;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 22px 53px;
+}

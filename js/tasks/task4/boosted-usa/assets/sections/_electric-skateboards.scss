@@ -1,0 +1,24 @@
+.electric-skateboards {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    figure {
+        background-image: url('./assets/images/image-electric-skateboards.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: max-content;
+        min-height: 70rem;
+    }
+
+    .showcase {
+        top: 25%;
+
+        h2 {
+            font-weight: 700;
+            font-size: 4.5rem;
+            line-height: 50.63px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.showcase {
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 7.6rem);
+    color: white;
+    background-image:
+        linear-gradient(to top left,
+            rgba(0, 0, 0, 0.769),
+            rgba(128, 128, 128, 0.76)),
+        url(../media/showcase.png);
+    background-size: cover;
+}
+
+.showcase .container {
+    padding-top: 10%;
+}
+
+.showcase .text {
+    width: 70%;
+    border-radius: 1rem;
+    border: .5rem dotted white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.showcase .text .headline {
+    font-size: 5rem;
+    padding: 5rem 1rem
+}
+
+.showcase .text .sub-headline {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.showcase form button[type="submit"] {
+    font-size: 1.9rem;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+
+    background-color: black;
+    color: white;
+}
+
+.cards {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.cards .card {
+    width: 20%;
+    display: inline-block;
+    border: 1px solid black;
+    padding-bottom: 20px;
+    margin: 30px;
+    position: relative;
+}
+
+.cards .card:hover {
+    box-shadow: 2px 2px 20px 5px rgb(211, 210, 210);
+}
+
+.cards .card-text h2 {
+    font-size: 2.9rem;
+    padding: 1rem;
+}
+
+.cards .card .card-text p {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.cards .card .card-img img {
+    width: 100%;
+    position: relative;
+}
+
+.cards .card .card-img i {
+    font-size: 2.5rem;
+    right:1rem;
+    top: 1rem;
+    color: red;
+    z-index: 2;
+    position: absolute;
+}
+
+.cards .card .hearts {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.cards .card form {
+    width: 100%;
+    text-align: center;
+}
+
+.cards .card form button {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border-radius: 1.8rem;
+    font-size: 2rem;
+
+    border: none;
+    background-color: black;
+
+    color: white;
+}

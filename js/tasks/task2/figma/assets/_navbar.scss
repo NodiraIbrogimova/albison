@@ -1,0 +1,122 @@
+@import './variables';
+
+.nav {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    label {
+        order: 3;
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.nav-items {
+        left: 0;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.2rem;
+    }
+
+    &-item {
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 14.63px;
+        font-size: 1.2rem;
+        color: #fff;
+
+        &:first-child {
+            background-color: $color-white;
+            color: $color-primary;
+            padding: 1.5rem;
+        }
+    }
+
+    &-link {
+
+        &--logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            color: $color-white;
+            gap: 1.5rem;
+
+            span:last-child {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+            transition: 0.5ms ease;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .nav {
+        &-item {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .nav {
+        &-item {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .nav {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        label {
+            display: initial;
+
+            span {
+                display: block;
+                width: 3rem;
+                height: 1rem;
+                border-bottom: 1px solid white;
+                color: $color-white;
+            }
+        }
+
+        &-items {
+            background-color: $color-primary;
+            padding: 2rem 2rem;
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 100%);
+            top: 100%;
+            left: -200%;
+            flex-direction: column;
+            transition: .6s ease-in-out;
+            z-index: 4;
+        }
+
+        &-item {
+            font-size: 1.5rem;
+        }
+    }
+}

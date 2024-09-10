@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.header .transparent-layer {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.header .heading-1 {
+  font-weight: 900;
+}
+
+.heading-1 {
+  font-size: 72px;
+  line-height: 61.6px;
+  text-transform: capitalize;
+}
+
+.heading-2 {
+  font-size: 48px;
+  line-height: 52.8px;
+}
+
+.heading-6 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.color-secondary {
+  color: #d9ed82;
+}
+
+.nav {
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav label {
+  order: 3;
+  display: none;
+}
+.nav input[type=checkbox] {
+  display: none;
+}
+.nav input[type=checkbox]:checked ~ .nav-items {
+  left: 0;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.2rem;
+}
+.nav-item {
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 14.63px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+.nav-link--logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.nav-link--logo span:last-child {
+  font-weight: 600;
+}
+.nav-link:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.5ms ease;
+}
+
+@media (max-width: 1120px) {
+  .nav-item {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 960px) {
+  .nav-item {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1040px) {
+  .nav {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nav label {
+    display: initial;
+  }
+  .nav label span {
+    display: block;
+    width: 3rem;
+    height: 1rem;
+    border-bottom: 1px solid white;
+    color: #FFFFFF;
+  }
+  .nav-items {
+    background-color: #FFFFFF;
+    padding: 2rem 2rem;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100%);
+    top: 100%;
+    left: -200%;
+    flex-direction: column;
+    transition: 0.6s ease-in-out;
+    z-index: 4;
+  }
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: initial;
+  border: initial;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 200rem;
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #d9ed82;
+  color: #164641;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.header {
+  background-image: url("./assets/images/image-bg.jpeg");
+}
+
+/*# sourceMappingURL=styles.css.map */

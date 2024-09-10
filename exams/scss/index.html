@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/js/uikit.min.js"
+        integrity="sha512-uNdy6/b4kpAKQgC1MqDRW7HzGqmja6jPPfQ0Pv3q4f0r5XpL4cxPlgqgSbFT5pnLFo4BSFZX8Ve/ak0DDN06OA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/css/uikit-core-rtl.min.css"
+        integrity="sha512-+6D4TOLdOBhkuufbELpbCiGmD+Y4dzrNbSPGwtgGO2nf7Id3dM0x5R/Cw0bI/13pFUnsRL8pfpmKNWLbAx8fGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/css/uikit-core.min.css"
+        integrity="sha512-Up68klxaLGLgBXFtu9KAkcM0/b1Vv97wru/VabGokNEwbQN1RBjBtthqDgildf/8YCOKaaLvT5ZfIvVPom5dIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.11/js/uikit-icons.min.js"
+        integrity="sha512-Rrh7aqdTz7Q1BPfCdWCK3poag9FNK1HQJMbSdL/eRZwXkbS1EWlY5n2XJ70ZVh1ZLRIJEUoWxATps1cyzpGp/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!-- 4 hours for two page -->
+    <!-- 2ta page home and services + responsive 300px gacha -->
+
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <label for="mobile-menu">X</label>
+                <input type="checkbox" name="mobile-menu" id="mobile-menu">
+
+                <ul class="nav--left">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/icons/icon-logo.png" alt="icon-logo" class="nav-logo">
+                    </a>
+                </ul>
+
+                <ul class="nav-items nav--right">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <div class="content">
+                        <div class="section-wrapper">
+                            <h2 class="content-header">Quality car <span>maintenance</span></h2>
+                            <p class="content-description">At Car Repair, we strive to provide the best levels of
+                                service to all our customers
+                                ensuring
+                                they enjoy a safe and pleasant driving experience. We offer an extensive range of car
+                                repair
+                                and maintenance services for cars of all makes and models all under one roof. We
+                                specialize
+                                in car services including wheel alignment service, car body repair, engine repair,
+                                denting
+                                and painting etc.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/image-carousel-1.jpeg" alt="image-carousel-1" uk-cover>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="section-wrapper">
+                            <h2 class="content-header">Quality car <span>maintenance</span></h2>
+                            <p class="content-description">At Car Repair, we strive to provide the best levels of
+                                service to all our customers
+                                ensuring
+                                they enjoy a safe and pleasant driving experience. We offer an extensive range of car
+                                repair
+                                and maintenance services for cars of all makes and models all under one roof. We
+                                specialize
+                                in car services including wheel alignment service, car body repair, engine repair,
+                                denting
+                                and painting etc.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/image-carousel-2.jpeg" alt="image-carousel-2" uk-cover>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="section-wrapper">
+                            <h2 class="content-header">Quality car <span>maintenance</span></h2>
+                            <p class="content-description">At Car Repair, we strive to provide the best levels of
+                                service to all our customers
+                                ensuring
+                                they enjoy a safe and pleasant driving experience. We offer an extensive range of car
+                                repair
+                                and maintenance services for cars of all makes and models all under one roof. We
+                                specialize
+                                in car services including wheel alignment service, car body repair, engine repair,
+                                denting
+                                and painting etc.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/image-carousel-3.jpeg" alt="image-carousel-3" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <article class="few-words">
+                <h2 class="content-header">
+                    A FEW WORDS <span>ABOUT US</span>
+                </h2>
+                <p class="content-description">
+                    For nearly 20 years, residents throughout the local area have turned to Car Repair for all of their
+                    automotive repair needs. With free estimates and fast turnaround, we are known for our personal
+                    service and expertise in all forms of specialized engine repair. We use the latest and most modern
+                    diagnostic technology to have you back in your car.
+                </p>
+                <button class="btn">
+                    <a href="#">READ MORE</a>
+                </button>
+            </article>
+
+            <article class="items">
+                <div class="item">
+                    <figure>
+                        <img src="./assets/images/image-best-services-1.jpeg" alt="image-best-services-1">
+                    </figure>
+                    <div class="item-description">
+                        <h2 class="content-header">BEST <br><span>SERVICES</span></h2>
+                        <p class="content-description">Car Repair can solve almost any problem that occurs with your
+                            vehicle. From engine repairs and oil change to regular maintenance and diagnostics, you will
+                            always get reliable services from our ASE certified technicians who use the latest in
+                            automotive equipment and diagnostic software.
+                        </p>
+                        <button class="btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./assets/images/image-best-services-2.jpeg" alt="image-best-services-2">
+                    </figure>
+                    <div class="item-description">
+                        <h2 class="content-header">100% RESULT <br><span>GUARANTEE</span></h2>
+                        <p class="content-description">Car Repair stands for expertise, value, and professionalism - and
+                            has from the day the company began. We were the first automotive aftermarket repair company
+                            to offer a lifetime guarantee on select services, and today we guarantee that the results of
+                            our work will meet your expectations.
+                        </p>
+                        <button class="btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="advantages">
+            <h2 class="content-header"><span>OUR </span>ADVANTAGES</h2>
+            <div class="cards">
+                <div class="card">
+                    <figure>
+                        <img src="./assets/icons/icon-car.png" alt="icon-car">
+                    </figure>
+                    <div class="card__text">
+                        <h2>ALL CAR MAKES</h2>
+                        <p>We provide a variety of repair and maintenance services for all car makes and models, even
+                            for exotic and vintage ones.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./assets/icons/icon-service.png" alt="icon-car">
+                    </figure>
+                    <div class="card__text">
+                        <h2>SERVICE VARIETY</h2>
+                        <p>The main principle of our work is to offer a wide range of quality car repair services and
+                            we’ve been doing it since our first day.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./assets/icons/icon-quality.png" alt="icon-car">
+                    </figure>
+                    <div class="card__text">
+                        <h2>QUALITY SUPPORT</h2>
+                        <p>Car Repair offers quality support programs for any vehicles that allow them to always stay
+                            fully functional.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./assets/icons/icon-engine.png" alt="icon-car">
+                    </figure>
+                    <div class="card__text">
+                        <h2>ACCESSORIES</h2>
+                        <p>
+                            At our car repair center, you can also buy any accessories you need for your vehicle,
+                            including car tires and filters.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn"><a href="#">READ MORE</a></button>
+        </section>
+
+        <section class="our-services">
+            <h2 class="content-header">
+                OUR <br><span>SERVICES</span>
+            </h2>
+            <div class="cards">
+                <div class="card">
+                    <figure><img src="./assets/images/image-our-services-1.jpeg" alt="image-our-services-1"></figure>
+                    <div class="card__text">
+                        <h3>BRAKE REPAIR</h3>
+                        <p>
+                            From the brake pedal to hydraulic brake fluid, our technicians can perform brake repair on
+                            any make and model.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <figure><img src="./assets/images/image-our-services-2.jpeg" alt="image-our-services-2"></figure>
+                    <div class="card__text">
+                        <h3>ENGINE REPAIR</h3>
+                        <p>
+                            We take the welfare of your engine seriously and offer services to prevent the need for
+                            future engine replacement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <figure><img src="./assets/images/image-our-services-3.jpeg" alt="image-our-services-3"></figure>
+                    <div class="card__text">
+                        <h3>OIL CHANGE</h3>
+                        <p>
+                            One of the most effective and inexpensive ways to help protect your car, is to change the
+                            oil and the oil filter regularly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <figure><img src="./assets/images/image-our-services-4.jpeg" alt="image-our-services-4"></figure>
+                    <div class="card__text">
+                        <h3>WHEEL CHANGE</h3>
+                        <p>
+                            We provide extensive wheel change services that include emergency tire replacement when you
+                            are on the road.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

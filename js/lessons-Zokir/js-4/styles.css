@@ -1,0 +1,12 @@
+.item {
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.ellipse {
+    border-radius: 25%;
+}

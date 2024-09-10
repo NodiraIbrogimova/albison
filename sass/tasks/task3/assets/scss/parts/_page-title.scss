@@ -1,0 +1,29 @@
+@import '../mixins';
+@import '../variables';
+
+.page-title {
+    margin-top: 10rem !important;
+    margin-bottom: 15rem !important;
+
+    h1 {
+        @include text(5.5rem, 500);
+        margin-bottom: 2.6rem;
+    }
+
+    &__breadcrumb {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        @include text(1.7rem, 500);
+
+        li:last-child {
+            color: $secondary-color;
+        }
+
+        li:not(:first-child)::before {
+            content: '━━';
+            padding-right: 2rem;
+            color: initial;
+        }
+    }
+}

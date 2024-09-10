@@ -1,0 +1,20 @@
+nav {
+  background: $mainColor;
+  display: flex;
+  color: $lorem;
+
+  justify-content: space-evenly;
+  ul {
+    background-image: url("");
+    background-color: $mainColor;
+    li {
+      display: flex;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+    &:nth-child(2) {
+      background-color: $lorem;
+    }
+  }
+}

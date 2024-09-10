@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    border: 4px solid blue;
+    margin: 20px;
+    transition: 0.5s;
+}
+/* .box h1{
+    background-color: red;
+} */
+/* .hi{
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid red;
+}
+h1.hi{
+    color: green;
+}
+h2.hi{
+    color: red;
+} */
+/* h1:nth-child(5){
+    background-color: green;
+}  */
+
+/* h1:nth-of-type(3){
+    background-color: red;
+} */
+
+/* h1:nth-child(odd){
+    background-color: green;
+}
+
+h1:nth-child(even){
+    background-color: red;
+} */
+/* descendant selector (space) */
+.box h1{
+
+}
+.box:hover{
+    box-shadow: 0 10px 5px gray;
+}
+/* child selector (>) */
+.box > h1{
+    background-color: red;
+}
+/* adjacent sibling selector (+) */
+.box + h1{
+    background-color: aqua;
+}
+/* general sibling selector (~) */
+.box ~ h1{
+    background-color: green;
+}
+
+input{
+    background-color: blue;
+    margin: 20px;
+}
+input:focus{
+    background-color: yellow;
+}
+input:active{
+    background-color: red;
+}

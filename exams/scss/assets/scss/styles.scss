@@ -1,0 +1,107 @@
+// pages
+@import './pages/home';
+// parts
+@import './parts/navbar';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    max-width: 2200px;
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+}
+
+.section-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+}
+
+.uk-link,
+a {
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+button {
+    background-color: initial;
+    border: initial;
+}
+
+header {
+    // max-height: 100vh;
+}
+
+.content-header {
+    font-size: 150px;
+    text-transform: uppercase;
+
+    span {
+        font-weight: 900;
+    }
+}
+
+.content-description {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.cards {
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 80px;
+    row-gap: 50px;
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &__text {
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .content-header {
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-header {
+        font-size: 48px !important;
+    }
+}

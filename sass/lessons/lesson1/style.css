@@ -1,0 +1,1 @@
+nav{background:green;display:flex;color:blue;justify-content:space-evenly}nav ul{background-image:url("");background-color:green}nav ul li{display:flex}nav ul li:hover{color:green}nav ul:nth-child(2){background-color:blue}.showcase{background-color:red}@media(max-width: 500px){.showcase ul{background-image:url()}}/*# sourceMappingURL=style.css.map */

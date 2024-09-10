@@ -1,0 +1,116 @@
+@import './assets/sections/home';
+@import './assets/sections/about';
+
+@import './assets/navbar';
+
+@import './assets/reset';
+@import './assets/mixins';
+@import './assets/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font;
+}
+
+body {
+    background-color: rgba(48, 44, 66, 1);
+}
+
+.container {
+    max-width: 200rem;
+    width: 90%;
+    margin: auto;
+}
+
+.gradient-text {
+    background-color: #fff;
+    background-image: linear-gradient($linear-gradient);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.btn {
+    background: linear-gradient(rgba(129, 118, 175, 1), rgba(192, 183, 232, 1));
+    padding: 1.7rem 3rem;
+    border-radius: 4rem;
+    color: rgba(52, 48, 69, 1);
+    border: 1px solid rgba(52, 48, 69, 1);
+}
+
+.text-top {
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    &__headline {
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 43.88px;
+        flex: 50%;
+        padding-right: 5%;
+
+        &--light {
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            img {
+                max-height: 6rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 19.5px;
+        flex: 50%;
+    }
+}
+
+@media (max-width: 1032px) {
+    .text-top {
+        display: block;
+
+        &__headline {
+            justify-content: flex-start;
+        }
+
+        p {
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .text-top {
+        &__headline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--light {
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            display: none;
+        }
+    }
+}

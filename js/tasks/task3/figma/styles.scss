@@ -1,0 +1,30 @@
+@import './assets/sections/home';
+@import './assets/sections/showcase';
+@import './assets/sections/why-us';
+@import './assets/sections/furniture';
+
+
+@import './assets/navbar';
+@import './assets/reset';
+@import './assets/variables';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font;
+}
+
+body {
+    // background-color: rgba(48, 44, 66, 1);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}

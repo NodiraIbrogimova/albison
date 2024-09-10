@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import './partials/header';
+@import './partials/navbar';
+@import './partials/numbers';
+@import './partials/pricing';
+@import './partials/features';
+@import './partials/blog';
+@import './partials/icons';
+@import './partials/about';
+@import './reset';
+@import './variables/mixins';
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 63px;
+    line-height: 79px;
+    letter-spacing: 2.16px;
+    color: #080829;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    letter-spacing: 1.44px;
+
+    color: #080829;
+}
+
+// MEDIA
+@media (max-width: 768px) {
+    .icon-logo {
+        width: 10rem;
+    }
+}

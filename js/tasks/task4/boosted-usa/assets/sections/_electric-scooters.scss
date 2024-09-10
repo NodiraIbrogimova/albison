@@ -1,0 +1,84 @@
+.electric-scooters {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        gap: 3%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 4%;
+
+        .btn {
+            width: fit-content;
+        }
+
+        .section-paragraph {
+            line-height: 22.5px;
+        }
+    }
+
+    &__cards {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__media {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 1;
+        }
+    }
+
+}
+
+@media (max-width: 990px) {
+    .electric-scooters {
+        .container {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__text {
+            grid-column: 1 / span 2;
+            gap: 3rem;
+        }
+
+        &__media {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: initial;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .electric-scooters {
+        &__media {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            iframe {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}

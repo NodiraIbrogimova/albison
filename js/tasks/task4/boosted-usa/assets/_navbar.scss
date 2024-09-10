@@ -1,0 +1,126 @@
+@import './variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+
+    &-top {
+        background-color: $color-font;
+        color: $color-primary;
+        text-align: center;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: .2rem;
+    }
+
+    &-profile {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    label {
+        order: 3;
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.nav-items {
+        left: 0;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.2rem;
+        color: $color-font;
+        text-transform: uppercase;
+    }
+
+    &-item {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.1rem;
+        letter-spacing: .1rem;
+        padding: 2.2rem;
+    }
+
+    &-link {
+        &:hover {
+            border-bottom: 1px solid #fff;
+            transition: 0.5ms ease;
+        }
+    }
+}
+
+
+@media (max-width: 1228px) {
+    .nav {
+        &-item {
+            font-size: 1rem;
+            padding: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+
+    .nav {
+        position: relative;
+        padding: 2rem;
+
+        &-profile {
+            margin-left: auto;
+        }
+
+        label {
+            display: initial;
+            margin-left: 2rem;
+            order: 1;
+
+            span {
+                display: block;
+                width: 3rem;
+                height: 1rem;
+
+                &:first-child {
+                    border-bottom: 1px solid $color-font;
+                }
+
+                &:last-child {
+                    border-top: 1px solid $color-font;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        &-items {
+            justify-content: initial;
+            background-color: $color-primary;
+            padding: 2rem 2rem;
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 100%);
+            top: 100%;
+            left: -200%;
+            flex-direction: column;
+            transition: .6s ease-in-out;
+            z-index: 4;
+        }
+
+        &-item {
+            font-size: 1.5rem;
+        }
+    }
+}

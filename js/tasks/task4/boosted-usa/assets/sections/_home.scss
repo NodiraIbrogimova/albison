@@ -1,0 +1,42 @@
+@import '../mixins';
+@import '../variables';
+
+.home {
+    height: 95vh;
+    max-height: 95vh;
+    width: auto;
+    position: relative;
+
+    background-image: url('./assets/images/image-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .showcase {
+        top: calc(100vh - 90%);
+
+        h1 {
+
+            font-size: 4.4rem;
+            line-height: 50.63px;
+        }
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+
+        }
+
+    }
+}
+
+@media (max-width: 990px) {
+    .home {
+        .showcase {
+            top: calc(100vh - 70%);
+        }
+    }
+}

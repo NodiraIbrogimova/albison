@@ -1,0 +1,32 @@
+@import './../variables';
+
+.item {
+    font-weight: 500;
+    text-align: center;
+
+    &:hover {
+        background-color: $main-color;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    &__title {
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: $text-color;
+        padding-top: 2rem;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        letter-spacing: 0.02em;
+        color: $secondary-color;
+        padding: .7rem 0;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item | Womazing</title>
+    <link rel="stylesheet" href="../assets/scss/styles.css">
+    <link rel="stylesheet" href="../assets/scss/pages/_product.scss">
+</head>
+
+<body>
+    <header>
+        <nav class="nav container">
+            <a href="#" class="nav__left"><img src="../assets/icons/icon-logo.png" alt="icon-logo"></a>
+
+            <label for="mobile-menu">X</label>
+            <input type="checkbox" name="mobile-menu" id="mobile-menu">
+
+            <ul class="nav-items">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="../pages/store.html" class="nav-link active">Магазин</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">О бренде</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            </ul>
+            <section class="nav__right">
+                <a href="#" class="nav-item"><img src="../assets/icons/icon-phone.png" alt="icon-phone">
+                    <span>+7 (495)823-54-12</span>
+                </a>
+                <a href="#"><img src="../assets/icons/icon-bag.png" alt="icon-bag"></a>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="page-title container">
+            <h1>Свитшот Sweet Shot</h1>
+            <ul class="page-title__breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Свитшоты</a></li>
+                <li><a href="#">Свитшот Sweet Shot</a></li>
+            </ul>
+        </section>
+
+        <section class="cards container">
+            <div class="card">
+                <figure class="card__img">
+                    <img src="../assets/images/image-product-item-1.png" alt="image-product-item-1">
+                </figure>
+                <div class="card__text">
+                    <h3 class="section-title">
+                        <span>$311</span> <span><del>$450</del></span>
+                    </h3>
+                    <p>Выберите размер</p>
+                    <section class="sizes-group">
+                        <button class="btn"><span>S</span></button>
+                        <button class="btn"><span>M</span></button>
+                        <button class="btn"><span>L</span></button>
+                        <button class="btn"><span>XL</span></button>
+                        <button class="btn"><span>XL</span></button>
+                    </section>
+                    <p>Выберите цвет</p>
+                    <section class="colors-group">
+                        <button class="btn brown"></button>
+                        <button class="btn grey"></button>
+                        <button class="btn pink"></button>
+                        <button class="btn orange"></button>
+                    </section>
+
+                    <section class="add-to-cart">
+                        <input type="text" id="count" placeholder="       1">
+                        <!-- <form action="">
+                            <label for="count"></label>
+                            <input type="text" id="count" placeholder="1">
+                        </form> -->
+                        <button class="btn"><span>Добавить в корзину</span></button>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Связанные товары</h2>
+            <div class="items">
+                <a href="#" class="item">
+                    <figure>
+                        <img src="../assets/images/image-collection-1.png" alt="image-collection-1">
+                    </figure>
+                    <p class="item__title">Футболка USA</p>
+                    <p class="item__description">
+                        <span><del>$229</del></span>
+                        <span>$129</span>
+                    </p>
+
+                </a>
+                <a href="#" class="item">
+                    <figure>
+                        <img src="../assets/images/image-collection-1.png" alt="image-collection-1">
+                    </figure>
+                    <p class="item__title">Футболка USA</p>
+                    <p class="item__description">
+                        <span><del>$229</del></span>
+                        <span>$129</span>
+                    </p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__left">
+                <div class="footer__left__about">
+                    <figure>
+                        <img src="../assets/icons/icon-logo.png" alt="icon-logo">
+                    </figure>
+                    <p>
+                        © Все права защищены
+                        <br>Политика конфиденциальности
+                        <br>Публичная оферта
+                    </p>
+                </div>
+                <ul class="footer__nav">
+                    <li class="nav-item active"><a href="#" class="nav-link">Главная</a></li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Магазин</a>
+                        <ul class="nav-item__nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Пальто</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Свитшоты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Кардиганы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Толстовки</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link">О бренде</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+            </section>
+            <section class="footer__right">
+                <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                <div class="footer__right__social-media">
+                    <img src="../assets/icons/icon-instagram.png" alt="icon-instagram">
+                    <img src="../assets/icons/icon-facebook.png" alt="icon-facebook">
+                    <img src="../assets/icons/icon-twitter.png" alt="icon-twitter">
+                </div>
+                <figure>
+                    <img src="../assets/icons/icon-visa-mastercard.png" alt="icon-visa-mastercard">
+                </figure>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

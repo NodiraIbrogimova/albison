@@ -1,0 +1,89 @@
+.about {
+    margin-top: 15rem;
+
+    .item {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+            &>.description {
+                color: #545479;
+                margin-top: 2.7rem;
+                margin-bottom: 3.5rem;
+            }
+
+            ul {
+                padding-left: 3rem;
+
+                li {
+                    margin-bottom: 1.4rem;
+                }
+            }
+
+            .description:first-child {
+                margin-top: 2.7rem;
+            }
+
+            button {
+                margin-top: 3.4rem;
+                @include button($color: #FFFFFF, $bgColor: #3F53D8, $borderColor: none);
+            }
+        }
+
+        &:nth-child(odd) {
+            .item__text {
+                padding-left: 12rem;
+            }
+        }
+
+        &:nth-child(2) {
+            .testimonial {
+                display: flex;
+                gap: 2.4rem;
+
+                &__text {
+                    font-size: 16px;
+                    line-height: 25px;
+                    letter-spacing: 0.36px;
+
+                    color: #080829;
+
+                    p:first-child {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+
+            &>figure {
+                order: 1;
+            }
+
+            .item__text {
+                padding-right: 12rem;
+            }
+
+        }
+
+        hr {
+            color: rgba(8, 8, 41, 0.3);
+            margin-top: 3.3rem;
+            margin-bottom: 3.3rem;
+        }
+
+        .partners {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        .item {
+            grid-template-columns: 1fr;
+        }
+    }
+}

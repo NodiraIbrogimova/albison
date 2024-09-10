@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.container-border-change {    
+    text-align: center;
+    color: white;
+    background-color: rgb(240, 128, 128);
+    border: 2px solid red;
+    padding: 10rem 0;
+    margin: 10rem 0;
+    animation: border-animation 1s ease infinite alternate;
+}
+
+@keyframes border-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 8px 2px rgba(0, 0, 0, 0.8);
+        border-radius: 50px 0 50px 0;
+    }
+}
+
+.container-spin {
+    background-color: yellow;
+    text-align: center;
+    animation: spin 1s infinite alternate;
+    margin: 200px 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: left;
+    }
+}
+
+.container-scale {
+    background-color: rgb(173, 216, 230);
+    padding: 100px 0;
+    text-align: center;
+    animation: scale 2s infinite alternate;
+}
+
+.container-scale p {
+    text-transform: capitalize;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container-skew, .container-translate {
+    background-color: rgb(211, 211, 211);
+}
+
+.container-skew {
+    padding: 70px 0;
+    margin: 40px 0;
+    text-align: center;
+    animation: skew 2s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(-45deg);
+    }
+
+    100% {
+        transform: skew(45deg);
+    }
+}
+
+.container-translate {
+    width: 200px;
+    aspect-ratio: 1;
+    margin: 150px auto;
+    text-align: center;
+    animation: translate 1s infinite alternate;
+}
+
+@keyframes translate {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(100px, 100px);
+        box-shadow: -4px -4px 0 rgba(0, 0, 0, 0.8), -8px -8px 0 rgba(0, 0, 0, 0.6),
+            -12px -12px rgba(0, 0, 0, 0.4);
+    }
+}

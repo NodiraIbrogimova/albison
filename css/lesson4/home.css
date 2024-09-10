@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#cards {
+  border: 3px solid red;
+  margin: 100px 40px 40px;
+}
+.card {
+  background-color: red;
+  width: 30%;
+  display: inline-block;
+  margin: 50px 100px;
+}
+.image {
+  background-color: yellow;
+  position: relative;
+  border: 6px solid blue;
+}
+.image u {
+  background-color: gray;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.image img {
+  width: 100%;
+}
+.text {
+  padding: 30px;
+}
+.nav {
+  background-color: aqua;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.nav h1 {
+  display: inline-block;
+  background-color: red;
+}
+.nav ul {
+  background-color: green;
+  display: inline-block;
+  margin: 10px 100px;
+}
+.nav ul li {
+  display: inline-block;
+}
+
+a {
+  background-color: blue;
+  border: 4px solid green;
+  color: inherit;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+span {
+  background-color: chocolate;
+  position: sticky;
+  top: 200px;
+  bottom: 300px;
+}
+
+#product {
+  background-color: green;
+  padding: 20px;
+  position: relative;
+  /* top: ;
+  bottom: ;
+  left: ;
+  right: ; */
+  z-index: 90;
+}

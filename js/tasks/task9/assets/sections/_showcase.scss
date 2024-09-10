@@ -1,0 +1,120 @@
+@import '../variables';
+@import '../mixins';
+
+.showcase {
+
+    h1 {
+        font-weight: 600;
+        color: $color-white;
+        line-height: 7rem;
+
+        span {
+            background-color: $color-secondary;
+            color: $color-primary;
+        }
+    }
+
+    p {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        color: $color-christmas;
+        font-weight: 300;
+    }
+
+    .item:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .btn {
+            @include button(unset, $color-white);
+            color: $color-primary;
+            border-radius: 1rem;
+
+            span {
+                color: inherit;
+            }
+        }
+
+        a.text {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+
+            img {
+                margin-left: 1rem;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    figure.item {
+        text-align: right;
+
+        img {
+            object-fit: cover;
+            max-width: 100%;
+        }
+    }
+
+    &__partners {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        figure {
+            background-color: $color-white;
+            padding: .5rem 2rem;
+            border-radius: 1.5rem;
+
+            img {
+                max-height: 5rem;
+                max-width: 10rem;
+                object-fit: contain;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .showcase {
+        .item:first-child {
+            flex-basis: initial;
+        }
+
+        figure.item {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 570px) {
+    .showcase {
+        &__partners {
+            figure {
+                max-width: 25%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .showcase {
+        h1 {
+            font-size: 4.8rem;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .showcase {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form action="">
+        <!-- input types: 
+            text, number, password, email, 
+            color, date, range, file
+            radio, checkbox, textarea
+         -->
+        <label for="name">Your Name:</label>
+        <input id="name" value="Alex" minlength="3" maxlength="18" required type="text" placeholder="Username"> <br><br>
+
+        <label for="age">Age: </label>
+        <input id="age" type="number" placeholder="Age"> <br><br>
+
+        <label for="password">Password: </label>
+        <input id="password" type="password" placeholder="Password"> <br><br>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Email"> <br><br>
+
+        <label for="ielts">IELTS score</label>
+        <input id="ielts" step="0.5" min="5" max="9" type="number">
+
+        <!--=======================-->
+        <input type="color"> <br><br>
+        <input type="date"> <br><br>
+        <input type="range"> <br><br>
+        <input type="file"> <br><br>
+
+        <!--=======================-->
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="female">
+
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="male"> <br><br>
+        <!--=======================-->
+
+        <label for="tesla">Tesla</label>
+        <input id="tesla" type="checkbox">
+
+        <label for="damas">Damas</label>
+        <input id="damas" type="checkbox">
+
+        <label for="peshkom">Peshkom</label>
+        <input id="peshkom" type="checkbox"> <br><br>
+        <hr>
+        <!--=======================-->
+
+        <label for="maths">Maths</label>
+        <input id="maths" name="firstCourse" value="Maths" type="radio">
+        <label for="physics">Physics</label>
+        <input id="physics" name="firstCourse" value="Physics" type="radio">
+        <label for="electronics">Electronics</label>
+        <input id="electronics" name="firstCourse" value="Electronics" type="radio">
+        <label for="linearAlgebra">Linear Algebra</label>
+        <input id="linearAlgebra" name="firstCourse" value="linearAlgebra" type="radio">
+        <br><br><br><br>
+        <label for="Geography">Geography</label>
+        <input id="Geography" name="secondCourse" value="Geography" type="radio">
+        <label for="Philosophy">Philosophy</label>
+        <input id="Philosophy" name="secondCourse" value="Philosophy" type="radio">
+        <label for="History">History</label>
+        <input id="History" name="secondCourse" value="History" type="radio">
+        <label for="Linguistics">Linguistics</label>
+        <input id="Linguistics" name="secondCourse" value="Linguistics" type="radio">
+        <label for="MotherTongue">Mother Tongue</label>
+        <input id="MotherTongue" name="secondCourse" value="MotherTongue" type="radio">
+        <label for="Law">Law</label>
+        <input id="Law" name="secondCourse" value="Law" type="radio">
+        <br><br>
+        <hr>
+        <!--=======================-->
+        <label for="bio">Bio: </label>
+        <textarea name="bio" id="bio" cols="100" rows="5" placeholder="Type your bio here"></textarea>
+        <br><br><br><br>
+        <!--=======================-->
+        <!-- <select name="lang" multiple> -->
+        <select name="lang" multiple>
+            <option value="uz" selected>Uzbek</option>
+            <option value="ru">Russian</option>
+            <option value="fr">French</option>
+            <option value="de">Deutch</option>
+            <option value="en">English</option>
+        </select>
+        <!--=======================-->
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Clear">Clear</button>
+        <!--=======================-->
+        <input type="submit" value="test">
+    </form>
+
+</body>
+
+</html>

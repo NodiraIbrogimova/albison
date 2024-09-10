@@ -1,0 +1,129 @@
+@import './../variables/colors';
+@import './../variables/mixins';
+
+.nav {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+        grid-row: 1 / span 2;
+        grid-column: 1/2;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    &-items {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: space-between;
+
+        &__bottom {
+            grid-row: 2/3;
+            grid-column: 2 / 3;
+
+            display: flex;
+            justify-content: space-between;
+
+            &__search {
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            &__contact {
+                text-align: end;
+
+                a {
+                    display: block;
+                    @include link ($linkColor, 18px, 900, 140%, inherit);
+
+                    i {
+                        color: $mainColor;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &-item {
+        // $color, $fontSize, $fontWeight, $lineHeight, $letterSpacing
+        @include link ($linkColor, 17px, 400, 140%, inherit);
+
+        &:hover {
+            border-bottom: 2px solid $mainColor;
+        }
+    }
+
+    &__login {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-self: right;
+        @include link ($linkColor, 17px, 400, 140%, inherit);
+
+        i {
+            color: $mainColor;
+            margin-right: 1rem;
+        }
+
+    }
+
+    &__updates {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        justify-self: right;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @include link ($linkColor, 17px, 400, 140%, inherit);
+
+        i {
+            color: $mainColor;
+        }
+
+        &__basket {
+            background-color: $secondaryColor;
+            border-radius: 5rem;
+            padding: 0.5rem 3rem;
+
+            &__count {
+                margin-left: 1rem;
+                color: $mainColor;
+            }
+        }
+    }
+
+    label {
+        display: none;
+    }
+
+    label[for="search"] {
+        display: inline-block;
+        position: absolute;
+        left: 1rem;
+        color: $mainColor;
+    }
+
+    input[id="search"] {
+        border-radius: 5rem;
+        padding: 1rem 2rem;
+        background-color: $secondaryColor;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[id="mobileMenu"]:checked~nav {
+        left: 0;
+    }
+}

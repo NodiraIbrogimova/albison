@@ -1,0 +1,21 @@
+.numbers {
+    text-align: center;
+    margin-top: 10rem;
+
+    h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.48px;
+        margin-bottom: 5.4rem;
+
+        color: #080829;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-between;
+    }
+}

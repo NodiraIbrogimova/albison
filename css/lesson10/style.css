@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+}
+
+.box {
+  border: 3px solid red;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  /* animation-name: soya;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; */
+  animation: soya 2s 4s infinite alternate-reverse forwards;
+}
+h1 {
+  /* position: absolute; */
+  background-color: green;
+  transition: 1s;
+  width: 200px;
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  /* transform-origin: 10px 50px; */
+}
+h1:hover {
+  /* transform: translate(50%); */
+  /* transform: rotate(360deg); */
+  /* transform: scale(1.5); */
+  /* transform: skewY(-30deg); */
+}
+
+@keyframes soya {
+  10% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    border-radius: 50%;
+    height: 400px;
+    background-color: yellow;
+  }
+}
+
+.dvornik {
+  background-color: gray;
+  height: 300px;
+  width: 20px;
+  transform-origin: bottom;
+  transform: rotate(-90deg);
+  animation-name: aylan;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes aylan {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.square {
+  width: 30%;
+  aspect-ratio: 1;
+  background-color: red;
+  /* animation: box 3s linear infinite; */
+}
+
+@keyframes box {
+  25% {
+    transform: translate(200px);
+  }
+  50% {
+    transform: translate(200px, 200px);
+  }
+  75% {
+    transform: translateY(200px);
+  }
+  100% {
+  }
+}

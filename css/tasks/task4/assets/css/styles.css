@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    background-color: lightblue;
+    position: sticky;
+    border-bottom: 2px double green;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    padding: 20px;
+    color: tomato;
+}
+
+.header h1,
+.header ul,
+.header ul li {
+    display: inline-block;
+}
+
+.header ul li {
+    padding: 0 15px;
+    border-bottom: 2px solid red;
+    margin: 0 10px;
+}
+
+.header ul li a {
+    color: inherit;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 48px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.bg-aqua {
+    background-color: aqua;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.text .first {
+    text-shadow: 2px 2px gray, 3px 3px gray, 4px 4px gray;
+}
+
+.text .second {
+    text-shadow: 4px 4px 2px red, 8px 8px 2px yellow, 4px 4px 2px gray;
+}
+
+.text .third {
+    text-shadow: 0 2px gray, 0 4px gray, 0 6px gray, 0 8px gray;
+}
+
+.text .fourth {
+    color: white;
+    text-shadow: 3px 3px black, 5px 5px white, 7px 7px black;
+}
+
+.squares div {
+    width: 200px;
+    aspect-ratio: 1;
+    margin: 30px;
+    display: inline-block;
+    background-color: teal;
+}
+
+.squares .shadow-blurred {
+    box-shadow: 5px 5px 5px red, 10px 10px 5px green, 15px 15px 5px yellow;;
+}
+
+.squares .shadow-no-blur {
+box-shadow: 5px 5px 0 red, 10px 10px 0 green, 15px 15px 0 yellow;
+}
+
+.squares .shadow-inset {
+    box-shadow: inset 5px 5px 10px red, inset 10px 10px 10px green, inset 15px 15px 10px yellow;
+}
+
+.squares .shadow-layered {
+    box-shadow: 2px 2px gray, 4px 4px red, 6px 6px gray, 8px 8px red, 10px 10px gray;;
+}
+
+.squares .shadow-negative {
+    box-shadow: -10px -10px red, -20px -20px gray, -30px -30px red, -40px -40px gray;;
+}

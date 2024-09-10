@@ -1,0 +1,133 @@
+@import './variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 5rem;
+
+    label {
+        order: 3;
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.nav-items {
+        left: 0;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.2rem;
+
+        &>.nav-items--buttons {
+            display: none;
+        }
+
+        &--buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3.2rem;
+
+            .btn:first-child {
+                border: 1px solid #fff;
+                background: unset;
+                color: #fff;
+            }
+        }
+    }
+
+    &-item {
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 14.63px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    &-link {
+
+        &--logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+            transition: 0.5ms ease;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .nav {
+        &-item {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .nav {
+        &-items {
+            gap: 3.2rem;
+
+            &--buttons {
+                gap: 1.2rem;
+            }
+        }
+
+        &-item {
+            font-size: .9rem;
+        }
+
+        .btn {
+            padding: 0.7rem 2rem;
+        }
+    }
+}
+
+@media (max-width: 845px) {
+
+    .nav {
+        position: relative;
+
+        label {
+            display: flex;
+        }
+
+        &-items {
+            background: $linear-gradient;
+            padding: 5rem 2rem;
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 100%);
+            top: 100%;
+            left: -200%;
+            flex-direction: column;
+            transition: .6s ease-in-out;
+            z-index: 4;
+
+            &>.nav-items--buttons {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--buttons {
+                display: none;
+            }
+        }
+
+        &-item {
+            font-size: 1.5rem;
+        }
+    }
+}

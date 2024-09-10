@@ -1,0 +1,51 @@
+.our-team {
+    text-align: center;
+    margin-top: 10rem;
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
+        row-gap: 2rem;
+
+        .card {
+            p.text {
+                font-size: 1.4rem;
+            }
+
+            p,
+            h5 {
+                padding-top: 1rem;
+            }
+
+            .heading-5 {
+                font-weight: 600;
+                font-weight: 2rem;
+            }
+
+            figure {
+                img {
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+    .our-team {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .our-team {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}

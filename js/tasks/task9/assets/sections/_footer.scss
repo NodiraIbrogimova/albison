@@ -1,0 +1,106 @@
+@import '../variables';
+@import '../mixins';
+
+.footer {
+    background-color: $color-primary;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__contact {
+        display: flex;
+        row-gap: 2rem;
+        flex-direction: column;
+
+        a {
+            img {
+                vertical-align: middle;
+                margin-right: 1rem;
+            }
+
+            span.text {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__socials {
+
+        &__icons {
+            margin-top: 2rem;
+            display: flex;
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        label.text {
+            font-size: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            background-color: $color-white;
+            border: unset;
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            font-weight: 100;
+        }
+
+        .btn {
+            @include button(unset, $color-secondary);
+            width: 100%;
+            border-radius: 1rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+        }
+    }
+
+    .logo {
+        width: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+
+    .text {
+        color: $color-christmas;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    .heading-6 {
+        font-size: 1.6rem;
+        color: $color-white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            row-gap: 3rem;
+            column-gap: 3rem;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .footer {
+        .container {
+            grid-template-columns: 1fr;
+            row-gap: 5rem;
+        }
+    }
+}

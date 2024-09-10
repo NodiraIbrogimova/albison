@@ -1,0 +1,126 @@
+@import './../variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    position: sticky;
+    left: 10%;
+
+    label {
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~ul {
+        left: 0;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 4.5rem;
+    }
+
+    &-item {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #000000;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 6rem;
+
+        &>a:first-child {
+            img {
+                margin-right: 2rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        margin: initial;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        label {
+            color: $main-color;
+            display: block;
+            order: 2;
+            font-size: 24px;
+        }
+
+        &-items {
+            z-index: 2;
+            padding: 3rem 4rem;
+            position: absolute;
+            top: 100%;
+            left: -200%;
+            width: 100%;
+            height: calc(100vh - 75px);
+            background-color: $main-color;
+            box-shadow: rgba(255, 202, 66, 0.07) 0px 1px 1px;
+            color: $main-color;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+
+            .nav-link {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+
+        &__right {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+
+            &>a:first-child {
+                img {
+                    margin-right: initial;
+                    background-color: #fff;
+                    padding: 1rem;
+                    border-radius: 50%;
+                }
+            }
+
+            &>a:last-child {
+                img {
+                    background-color: $main-color;
+                    padding: 1rem;
+                    border-radius: 100px;
+                }
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+}

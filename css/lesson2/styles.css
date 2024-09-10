@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+h1 {
+    background-color: yellow;
+    color: green;
+
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* 100 - 900 */
+    font-weight: 100;
+    font-style: oblique;
+
+    /* capitalize, uppercase, lowercase */
+    text-transform: capitalize;
+
+    /* underline, overline, line-through */
+    /* solid, wavy, dotted, dashed, double */
+    text-decoration: overline wavy;
+
+    /* start, center, end */
+    text-align: center;
+
+    /* height of letters - or almost vertical version of letter-spacing */
+    line-height: 90px;
+    letter-spacing: 10px;
+}
+
+i {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    text-align: center;
+    text-decoration: line-through dotted;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 25px;
+    line-height: 30px;
+
+    /* positions the text so that it fills the space */
+    text-align: justify;
+}

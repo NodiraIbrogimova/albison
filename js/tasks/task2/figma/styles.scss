@@ -1,0 +1,83 @@
+@import './assets/sections/home';
+@import './assets/sections/about';
+@import './assets/sections/showcase';
+@import './assets/sections/services';
+@import './assets/sections/our-team';
+@import './assets/sections/contact';
+@import './assets/sections/footer';
+
+@import './assets/navbar';
+
+@import './assets/reset';
+@import './assets/mixins';
+@import './assets/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font;
+}
+
+body {
+    // background-color: rgba(48, 44, 66, 1);
+}
+
+.container {
+    max-width: 200rem;
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+        flex-basis: 50%;
+    }
+}
+
+.btn {
+    padding: 1.7rem 3rem;
+    width: fit-content;
+}
+
+.text {
+    color: $color-oak;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.logo {
+    border-radius: 50%;
+    background-color: $color-white;
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.section-header {
+    position: relative;
+    color: $color-primary;
+    font-weight: 600;
+    margin-bottom: 5rem;
+
+    &__border {
+        position: absolute;
+        background-color: $color-christmas;
+        top: calc(100% + 1rem);
+        width: 25%;
+    }
+}

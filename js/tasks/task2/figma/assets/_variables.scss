@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$font: 'Montserrat', sans-serif;
+// brand colors
+$color-primary: #0b0a0a;
+$color-secondary: #fced65;
+// state colors
+$color-info: #2f80ed;
+$color-success: #1fa59a;
+$color-warning: #E2B93B;
+$color-error: #EB5757;
+// black colors
+$color-black: #000000;
+$color-eerie-black: #1D1D1D;
+$color-dire-wolf: #282828;
+$color-white: #FFFFFF;
+// grey colors
+$color-carbon: #333333;
+$color-oak: #4F4F4F;
+$color-trolley: #828282;
+$color-noghrei: #BDBDBD;
+$color-christmas: #e0e0e0;
+
+// headings
+.heading-1 {
+    font-size: 56px;
+    line-height: 61.6px;
+}
+
+.heading-2 {
+    font-size: 48px;
+    line-height: 52.8px;
+}
+
+.heading-3 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.heading-4 {
+    font-size: 32px;
+    line-height: 35.2px;
+}
+
+.heading-5 {
+    font-size: 24px;
+    line-height: 26.4px;
+}
+
+.heading-6 {
+    font-size: 20px;
+    line-height: 22px;
+}

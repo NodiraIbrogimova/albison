@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$font: 'Montserrat', sans-serif;
+// brand colors
+$color-primary: #FFFFFF;
+$color-secondary: #d9ed82;
+$color-text: #164641;
+$color-gray: 748287;
+
+// headings
+.heading-1 {
+    font-size: 72px;
+    line-height: 61.6px;
+    text-transform: capitalize;
+}
+
+.heading-2 {
+    font-size: 48px;
+    line-height: 52.8px;
+}
+
+// .heading-3 {
+//     font-size: 40px;
+//     line-height: 44px;
+// }
+
+// .heading-4 {
+//     font-size: 32px;
+//     line-height: 35.2px;
+// }
+
+// .heading-5 {
+//     font-size: 24px;
+//     line-height: 26.4px;
+// }
+
+.heading-6 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.color-secondary {
+    color: $color-secondary;
+}

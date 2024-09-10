@@ -1,0 +1,12 @@
+@import './assets/styles/reset';
+@import './assets/styles/navbar';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}

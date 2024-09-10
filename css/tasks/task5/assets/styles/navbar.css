@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar .nav {
+    margin: 1rem auto;
+    width: 90vw;
+    box-shadow: 1px 1px 10px 1px #d0d0d0,
+                -1px -1px 10px 1px #d0d0d0;
+    position: relative;
+}
+
+.navbar .nav ul {
+    margin: 1rem 1rem;
+    text-align: left;
+}
+
+.navbar ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem 5rem;
+    
+}
+
+.nav .active {
+    color: tomato;
+}
+
+.dropdown {
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 3.3rem;
+    left: 33%;
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown ul li:hover {
+    background-color: tomato;
+}
+
+.dropdown ul li {
+    display: block;
+}

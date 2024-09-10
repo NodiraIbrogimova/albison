@@ -1,0 +1,48 @@
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-logo {
+    background-image: url('./../icons/icon-logo.png');
+    width: 15rem;
+    height: 4.5rem;
+}
+
+.icon-shopping-cart {
+    background-image: url('./../icons/icon-shopping-cart.png');
+    width: 1.7rem;
+    aspect-ratio: 1;
+}
+
+.icon-arrow-left {
+    background-image: url('./../icons/icon-arrow-left.png');
+    width: 4.8rem;
+    aspect-ratio: 1;
+}
+
+.icon-arrow-right {
+    background-image: url('./../icons/icon-arrow-right.png');
+    width: 4.8rem;
+    aspect-ratio: 1;
+}
+
+.icon-star {
+    background-image: url('./../icons/icon-star.png');
+    width: 2.6rem;
+    aspect-ratio: 1;
+
+    &--empty {
+        background-image: url('./../icons/icon-star-empty.png');
+        width: 2.6rem;
+        aspect-ratio: 1;
+    }
+}
+
+.icon-quote {
+    background-image: url('./../icons/icon-quote.png');
+    width: 8rem;
+    height: 6rem;
+}

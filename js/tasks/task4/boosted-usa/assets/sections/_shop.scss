@@ -1,0 +1,17 @@
+.shop {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop {
+        .container {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+}

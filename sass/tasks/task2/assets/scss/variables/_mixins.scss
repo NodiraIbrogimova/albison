@@ -1,0 +1,14 @@
+@mixin link ($color, $fontSize, $fontWeight, $lineHeight, $letterSpacing) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin button ($bgColor, $border, $fontSize, $color) {
+    background-color: $bgColor;
+    border: $border;
+    font-size: $fontSize;
+    color: $color;
+}

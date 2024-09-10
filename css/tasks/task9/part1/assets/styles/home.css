@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    /* height: 100vh; */
+    background-color: #292E36;
+}
+
+header,
+main,
+footer {
+    width: 100vw;
+}
+
+header .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+header .navbar-top li {
+    width: 25%;
+    text-align: center;
+    gap: 7.5%;
+}
+
+header .navbar-top li:first-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+    border: 2px solid #E1B168;
+    padding: 2rem 5rem;
+}
+
+header .navbar-top li:nth-child(2) a {
+    display: inline-block;
+}
+
+header .navbar-top li:nth-child(2) a img {
+    width: 100%;
+}
+
+header .navbar-top li:nth-child(3) {
+    padding: 2rem 5rem;
+    background: #E1B168;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    text-align: center;
+    letter-spacing: 0.44px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul {
+    display: flex;
+}
+
+header .navbar ul li:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+header .navbar ul:first-child li {
+    padding: 3rem;
+}
+
+header .navbar ul:first-child li:first-child {
+    padding-left: 0;
+    color: #E1B168;
+}
+
+header .navbar ul:first-child li:last-child {
+    padding-right: 0;
+}
+
+header .navbar ul li {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+header .social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+header hr {
+    border: 1px solid #5C6168;
+}
+
+header .showcase {
+    display: flex;
+}
+
+header .showcase .showcase-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+header .showcase .showcase-left h2 {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+}
+
+header .showcase .showcase-left p {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+    color: #FFFFFF;
+}
+
+header .showcase .showcase-left button {
+    width: fit-content;
+    padding: 2rem 5rem;
+
+    color: #E1B168;
+    border: 2px solid #E1B168;
+    background: initial;
+}
+
+header .showcase div {
+    width: 50%;
+}
+
+header .showcase .showcase-right {
+    
+}
+
+header .showcase .showcase-right .showcase-right-image {
+    position: relative;
+}
+
+header .showcase .showcase-right .icon-watermark {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,36 @@
+==========================================================new tasks==============
+
+1)f-ya 2ta argument qabul qiladi so'z va harf so'zda berilgan harfdan nechta ekanligini sonini qaytarsin
+input:"lorem ipsum", "m"
+output:2 //m harfi 2ta
+
+========================
+
+2)f-ya 1ta matn qabul qiladi nechta so'zdan iborat ekanligini sonini qaytarsin
+input:"lorem ipsum dolor sit amet"
+output:5 //5ta so'zdan iborat
+
+=============================
+
+3)f-ya 1ta string qabul qiladi uni palindrome ekanligini tekshirishi kerak ya'ni so'zni teskarisi ham bir xil ekanligini
+input:"non"
+output:true // "non" teskarisi ham "non"
+
+input: "easy"
+output: false // "easy" ni teskarisi "ysae"
+
+=======================
+
+4)pensiya chiqish masalasi
+f-ya 2ta string va 1ta number argument qabul qiladi 
+name, gender, age
+f-ya genderni aniqlab pensiya chiqgan yoki chiqishi uchun nechi yil ekanligini aytishi kk
+uzbda pensiya yoshini o'zilar qidirib topinglar google ga yozishga erindim😅
+(pensiya yoshi genderga qarab farqli bo'lishi kk)
+
+=============================
+
+5)f-ya stringlardan tashkil topgan array qabul qiladi bu haftadagi kun nomlari arrayda qaysi hafta kuni nomlari tushib qolgan bo'lsa o'sha kunlarni bitta arrayda qaytarishi kk to'liq bo'lsa bo'sh array qaytarsin. (easy)
+
+input: ['seshanba', 'juma', 'shanba']
+ouput:['dushanba', chorshanba', 'payshanba', yakshanba']

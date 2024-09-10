@@ -1,0 +1,25 @@
+@import "variables";
+@import "navbar";
+
+.showcase {
+  background-color: red;
+  ul {
+  }
+}
+@media (max-width: 500px) {
+  .showcase {
+    ul {
+      background-image: url();
+      li {
+      }
+    }
+  }
+}
+
+// nav ul {
+//   background-color: yellow;
+// }
+
+// nav ul li {
+//   color: black;
+// }

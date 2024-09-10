@@ -1,0 +1,47 @@
+.box {
+    border: 4px solid linear-gradient(to top,red, blue);
+
+    /* background-image: url(./sakura.jpg); */
+    background-repeat: no-repeat;
+
+    background-position: left top;
+    background-size: cover;
+    /* creates parallax effect */
+    background-attachment: fixed;
+
+    /* 1. tell the change direction: from - to 
+    2. colors list - colors are changed by order */
+    /* background-image: linear-gradient(
+            to top,
+            rgba(0, 41, 246, 0.5),
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 41, 246, 0.5),
+            rgba(255, 255, 255, 0.4),
+            rgba(0, 41, 246, 0.3)
+        ), 
+        url(./sakura.jpg); */
+
+    /* no need to tell direction: it starts from center 
+       colors list - order starts from center
+    */
+    background-image: radial-gradient(
+        rgba(255, 0, 0, 0.17),
+         rgba(0, 0, 255, 0.162), 
+         rgba(255, 255, 0, 0.199), 
+         rgba(0, 128, 0, 0.175)),
+         url(./sakura.jpg);
+}
+
+h1 {
+    font-weight: 100;
+    color: white;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 5px;
+}

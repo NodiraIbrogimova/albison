@@ -1,0 +1,125 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+
+    font-style: normal;
+    font-weight: 400;
+    padding: 2rem 0;
+    position: relative;
+
+    label {
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        left: 0;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .nav-item {
+            font-size: 17px;
+            line-height: 18px;
+            letter-spacing: 0.18px;
+            color: $navColor;
+
+            .nav-link {
+
+                &:hover {
+                    border-bottom: 1px solid $navColor;
+                }
+            }
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            span {
+                font-size: 17px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+
+        button {
+            @include button($color: #080829, $bgColor: transparent, $borderColor: rgba(8, 8, 41, 0.2));
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: initial;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        label {
+            color: $mainColor;
+            display: block;
+            order: 2;
+            font-size: 24px;
+        }
+
+        .nav {
+            z-index: 2;
+
+            padding: 3rem 4rem;
+            position: absolute;
+            top: 100%;
+            left: -200%;
+            width: 100%;
+            height: calc(100vh - 75px);
+            background-color: $mainColor;
+            box-shadow: rgba(255, 202, 66, 0.07) 0px 1px 1px;
+            color: $mainColor;
+
+            .nav-items {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+
+                .nav-link {
+                    color: #fff;
+                }
+
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        .nav-right {
+            font-size: 1.4rem;
+
+            a span {
+                font-size: inherit;
+            }
+
+            button {
+                padding: 0.7rem 2.7rem;
+                font-size: inherit;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+@import './assets/sections/home';
+@import './assets/sections/partners';
+@import './assets/sections/shop';
+@import './assets/sections/electric-skateboards';
+@import './assets/sections/electric-scooters';
+@import './assets/sections/accessories';
+@import './assets/sections/more';
+
+@import './assets/navbar';
+@import './assets/footer';
+@import './assets/reset';
+@import './assets/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.card {
+    position: relative;
+    text-align: center;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-primary;
+        font-weight: 400;
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+
+        p {
+            padding-top: 1rem;
+            font-size: 1.8rem;
+            line-height: 23.44px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.showcase {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+
+    .section-paragraph {
+        letter-spacing: .1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.btn {
+    @include button(transparent, $color-secondary);
+    font-size: 1.4rem;
+    line-height: 22.5px;
+    border-radius: 3.5rem;
+    padding: 0.6rem 3.5rem;
+    color: $color-primary;
+}

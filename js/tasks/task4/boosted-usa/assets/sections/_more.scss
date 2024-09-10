@@ -1,0 +1,52 @@
+@import '../variables';
+
+.more {
+    background-color: $color-font;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+        max-width: 90%;
+        margin: 0 auto;
+
+        .item {
+            color: $color-primary;
+            text-align: center;
+
+            h3 {
+                font-weight: 700;
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+            }
+
+            .section-paragraph {
+                line-height: 22.5px;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+
+            img {
+                max-width: fit-content;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .more {
+        .items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .more {
+        .items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

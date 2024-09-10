@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.nav label {
+  display: none;
+}
+.nav input[type=checkbox] {
+  display: none;
+}
+.nav input[type=checkbox]:checked ~ ul {
+  left: 0;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.5rem;
+}
+.nav-item a {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: white;
+  font-size: 16px;
+}
+.nav-item:hover {
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    margin: initial;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .nav label {
+    color: white;
+    display: block;
+    order: 2;
+    font-size: 24px;
+  }
+  .nav-items {
+    z-index: 2;
+    padding: 3rem 4rem;
+    position: absolute;
+    top: 100%;
+    left: -200%;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-color: white;
+    box-shadow: rgba(255, 202, 66, 0.07) 0px 1px 1px;
+    color: white;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .nav-items .nav-link {
+    color: #fff;
+  }
+}
+header {
+  background-image: url(../images/image-bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+header .showcase {
+  position: relative;
+  height: 100%;
+}
+header .showcase .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  max-width: 60%;
+  left: 20%;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  position: absolute;
+  color: #fff;
+}
+header .showcase .wrapper .showcase__icon {
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+header .showcase .wrapper .showcase__icon svg {
+  width: 80px;
+  color: black;
+}
+header .showcase .wrapper h1,
+header .showcase .wrapper h2,
+header .showcase .wrapper h3 {
+  color: inherit;
+}
+header .showcase .wrapper h1 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+header .showcase .wrapper h2 {
+  font-size: 72px;
+  font-weight: 600;
+  padding: 0 0 38px 0;
+  letter-spacing: 0.5px;
+  line-height: unset;
+}
+header .showcase .wrapper h3 {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0 0 30px 0;
+}
+
+@media screen and (max-width: 640px) {
+  header .showcase {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  header .showcase h2 {
+    font-size: 30px;
+  }
+}
+.about__description {
+  padding-top: 150px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.about__description hr {
+  padding: 30px 0;
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 10px;
+  padding: 60px 0;
+}
+.about__cards span {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59.04px;
+  padding: 10px 0;
+  color: #000;
+}
+.about__cards p {
+  padding: 8px 0;
+}
+.about__cards hr {
+  border-top: 0.3px solid rgb(255, 187, 0);
+}
+.about .btn-main {
+  margin-top: 60px;
+  padding: 10px 60px;
+}
+
+@media (max-width: 800px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.courses {
+  background-color: rgb(240, 240, 240);
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.courses .cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 105px;
+}
+.courses .cards .card {
+  color: #000;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 9px;
+  border: 1px solid #e0e6ed;
+  padding: 40px 30px;
+}
+.courses .cards .card h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.courses .cards .card p {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+}
+.courses .cards .card span {
+  margin-top: 30px;
+  font-size: 42px;
+  font-weight: 600;
+}
+.courses .cards .card ul {
+  font-size: 22px;
+  font-weight: 300;
+}
+.courses .cards .card ul li {
+  padding-bottom: 10px;
+}
+.courses .cards .card .btn-main {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+
+@media (max-width: 800px) {
+  .courses .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.mentors {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.mentors .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-top: 100px;
+  justify-content: space-around;
+  justify-items: center;
+}
+.mentors .cards .card {
+  text-align: center;
+}
+.mentors .cards .card figure {
+  margin: 0 auto;
+  max-width: 200px;
+  aspect-ratio: 1;
+}
+.mentors .cards .card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.mentors .cards .card h3,
+.mentors .cards .card span {
+  margin: 0 auto;
+}
+.mentors .cards .card h3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .mentors .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .gallery__item--1 {
+  grid-column: 1/span 2;
+  grid-row: 1/2;
+}
+.gallery .gallery__item--4 {
+  grid-column: 3/span 2;
+  grid-row: 2/3;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  all: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+.uk-link,
+a {
+  text-decoration: inherit;
+  color: unset;
+  cursor: pointer;
+}
+
+button {
+  background-color: initial;
+  border: initial;
+}
+
+.container {
+  max-width: 200rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-main {
+  background-color: rgb(255, 187, 0);
+  color: black;
+  padding: 5px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+}
+.btn-main a {
+  color: inherit;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 31.9px;
+  color: #000;
+}
+
+.section-text-top {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-text-top h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=styles.css.map */

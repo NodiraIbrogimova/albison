@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+ul,
+li {
+    display: inline-block;
+}
+
+.container-bbc,
+.container-cnn,
+.container-linkedin,
+.container-instagram {
+    width: 100vw;
+}
+
+/*----BBC----*/
+.container-bbc {
+    background-color: black;
+}
+
+.container-bbc ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: block;
+    padding: 0 2rem;
+}
+
+.container-bbc ul li {
+    display: inline-block;
+    font-size: 1.8rem;
+    /* border-right: 1px solid rgb(171, 167, 167); */
+}
+
+.container-bbc ul li {
+    border-left: 1px solid rgb(171, 167, 167);
+}
+
+.container-bbc ul li:nth-child(9) {
+    color: white;
+    padding-right: 1rem;
+    border-right: 1px solid rgb(171, 167, 167);
+}
+
+.container-bbc ul li a {
+    color: white;
+    padding: 1rem 4rem;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2rem 3.5rem;
+}
+
+.container-bbc .logo img {
+    float: left;
+    max-height: 4rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.container-bbc form {
+    width: 20%;
+    float: right;
+    position: relative;
+    padding-top: 0.7rem;
+}
+
+.container-bbc input[type="text"] {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    width: 100%;
+    height: 3em;
+}
+
+.container-bbc form button {
+    position: absolute;
+    right: 2rem;
+    top: 36%;
+    background: unset;
+    border: none;
+    font-size: 2rem;
+}
+
+/*----End BBC----*/
+
+/*---- CNN----*/
+.container-cnn {
+    background-color: black;
+}
+
+.container-cnn ul {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.container-cnn ul li a {
+    display: inline-block;
+    margin-left: 1%;
+    color: rgb(189, 189, 189);
+    font-size: 1.8rem;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.2rem 1.5rem;
+}
+
+.container-cnn ul a img {
+    max-height: 5rem;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.container-cnn ul li {
+    vertical-align: middle;
+}
+
+.container-cnn ul li:last-child {
+    /* background-color: blue; */
+    float: right;
+}
+
+.container-cnn ul ul {
+    display: inline-block;
+    margin-block-start: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.container-cnn ul ul li i {
+    color: rgb(189, 189, 189);
+    font-size: 1.8rem;
+}
+/*----End CNN----*/
+
+/*----Linkedin----*/
+.container-linkedin {
+    width: 100vw;
+    box-shadow: 2px 2px 40px 10px #d5d5d5;
+    display: inline-block;
+    font-size: 0;
+}
+
+.container-linkedin ul {
+    display: inline-block;
+}
+
+.container-linkedin .container-linkedin__left {
+    width: 50%;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.container-linkedin .container-linkedin__left li:nth-child(2) {
+    width: 60%;
+}
+
+.container-linkedin .container-linkedin__left input[type="text"] {
+    width: 100%;
+    font-size: 1em;
+    color: #93979d;
+    background-color: #ecf1f7;
+    padding: 0.8rem;
+    
+}
+
+.container-linkedin .container-linkedin__left img {
+    width: 4rem;
+}
+
+.container-linkedin .container-linkedin__right {
+    width: 50%;
+    font-size: 1.8rem;
+    padding: 1rem 2rem 1rem 0;
+    text-align: right;
+}
+
+.container-linkedin .container-linkedin__right i {
+    color: #676767;
+}
+
+.container-linkedin .container-linkedin__right .profile {
+    display: inline-block;
+
+    background-image: url(./../media/images/image-profile.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.container-linkedin .container-linkedin__right li:nth-child(7) {
+    border-left: 1px solid #676767;
+}
+
+.container-linkedin .container-linkedin__right .more i {
+    display: block;
+    font-size: 2.5rem;
+    height: 0.7rem;
+}
+
+.container-linkedin .container-linkedin__right .more {
+    max-height: 4rem;
+    display: inline-block;
+}
+
+.container-linkedin ul a {}
+
+.container-linkedin ul li {
+    vertical-align: middle;
+    padding: 0 2rem;
+    font-size: 2.5rem;
+}
+
+/*----End Linkedin----*/
+
+/*----Instagram----*/
+.container-instagram {}
+
+/*----End Instagram----*/
+
+/*----Youtube----*/
+.container-youtube {}
+
+/*----End Youtube----*/
+
+/*----Facebook----*/
+.container-facebook {}
+
+/*----End Facebook----*/
+
+/*----Gmail----*/
+.container-gmail {}
+
+/*----End Gmail----*/
+
+/*----Bootstrap----*/
+.container-bootstrap {}
+
+/*----End Bootstrap----*/

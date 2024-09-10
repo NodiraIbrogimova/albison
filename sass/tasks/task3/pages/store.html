@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | Page</title>
+    <link rel="stylesheet" href="../assets/scss/styles.css">
+    <link rel="stylesheet" href="../assets/scss/pages/_store.scss">
+</head>
+
+<body>
+    <header>
+        <nav class="nav container">
+            <a href="#" class="nav__left"><img src="../assets/icons/icon-logo.png" alt="icon-logo"></a>
+
+            <label for="mobile-menu">X</label>
+            <input type="checkbox" name="mobile-menu" id="mobile-menu">
+
+            <ul class="nav-items">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="./store.html" class="nav-link active">Магазин</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">О бренде</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            </ul>
+            <section class="nav__right">
+                <a href="#" class="nav-item"><img src="../assets/icons/icon-phone.png" alt="icon-phone">
+                    <span>+7 (495)823-54-12</span>
+                </a>
+                <a href="#"><img src="../assets/icons/icon-bag.png" alt="icon-bag"></a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title container">
+            <h1>Магазин</h1>
+            <ul class="page-title__breadcrumb">
+                <li><a href="">Главная</a></li>
+                <li><a href="">Магазин</a></li>
+            </ul>
+        </section>
+
+        <section class="categories container">
+            <button class="btn"><a href="#">Все</a></button>
+            <button class="btn"><a href="#">Пальто</a></button>
+            <button class="btn"><a href="#">Свитшоты</a></button>
+            <button class="btn"><a href="#">Кардиганы</a></button>
+            <button class="btn"><a href="#">Толстовки</a></button>
+        </section>
+
+        <section class=" container">
+
+            <p class="shown-count">Показано: 9 из 12 товаров</p>
+
+            <div class="items">
+                <a href="./product.html" class="item">
+                    <figure>
+                        <img src="../assets/images/image-collection-1.png" alt="image-collection-1">
+                    </figure>
+                    <p class="item__title">Футболка USA</p>
+                    <p class="item__description">
+                        <span><del>$229</del></span>
+                        <span>$129</span>
+                    </p>
+
+                </a>
+                <a href="./product.html" class="item">
+                    <figure>
+                        <img src="../assets/images/image-collection-1.png" alt="image-collection-1">
+                    </figure>
+                    <p class="item__title">Футболка USA</p>
+                    <p class="item__description">
+                        <span><del>$229</del></span>
+                        <span>$129</span>
+                    </p>
+
+                </a>
+                <a href="./product.html" class="item">
+                    <figure>
+                        <img src="../assets/images/image-collection-1.png" alt="image-collection-1">
+                    </figure>
+                    <p class="item__title">Футболка USA</p>
+                    <p class="item__description">
+                        <span><del>$229</del></span>
+                        <span>$129</span>
+                    </p>
+
+                </a>
+            </div>
+        </section>
+
+        <section class="container pagination">
+            <p class="shown-count">Показано: 9 из 12 товаров</p>
+            <div class="pagination btn-group">
+                <button class="btn"><a href="#">1</a></button>
+                <button class="btn"><a href="#">2</a></button>
+                <button class="btn"><a href="#"><img src="../assets/icons/icon-arrow-right.png"
+                            alt="icon-arrow-right"></a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__left">
+                <div class="footer__left__about">
+                    <figure>
+                        <img src="../assets/icons/icon-logo.png" alt="icon-logo">
+                    </figure>
+                    <p>
+                        © Все права защищены
+                        <br>Политика конфиденциальности
+                        <br>Публичная оферта
+                    </p>
+                </div>
+                <ul class="footer__nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Магазин</a>
+                        <ul class="nav-item__nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Пальто</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Свитшоты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Кардиганы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Толстовки</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link">О бренде</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+            </section>
+            <section class="footer__right">
+                <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                <div class="footer__right__social-media">
+                    <img src="../assets/icons/icon-instagram.png" alt="icon-instagram">
+                    <img src="../assets/icons/icon-facebook.png" alt="icon-facebook">
+                    <img src="../assets/icons/icon-twitter.png" alt="icon-twitter">
+                </div>
+                <figure>
+                    <img src="../assets/icons/icon-visa-mastercard.png" alt="icon-visa-mastercard">
+                </figure>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

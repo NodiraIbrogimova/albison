@@ -1,0 +1,40 @@
+.cards .card {
+    width: 50rem;
+    padding: 2rem;
+    margin: 30px;
+
+    background-color: #4a4a4a;
+    display: inline-block;
+    border-radius: 4rem;
+    position: relative;
+}
+
+.cards .card:hover {
+    box-shadow: -5px 5px 0 0px #f770c3,
+    -10px 10px 0 0px #fb96d4,
+    -15px 15px 0 0px #fbc0e3,
+    -20px 20px 0 0px #fee2f3;
+}
+
+.cards .card .card-text {
+    padding: 2rem;
+}
+
+.cards .card-text h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+.cards .card .card-text p {
+    font-size: 2rem;
+    padding: 1rem 0;
+
+    color: yellow;
+}
+
+.cards .card .card-img img {
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}

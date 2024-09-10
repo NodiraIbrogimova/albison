@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 68, 91, 0.8), rgba(0, 68, 91, 0.9)), url(./../images/image-showcase.png);
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header nav h1 {
+    font-size: 2.5rem;
+}
+
+header nav h1 span {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.02em;
+    padding-left: 1rem;
+}
+
+header nav h1 a {
+    display: flex;
+    align-items: center;
+}
+
+header nav h1 img {
+    width: 10rem;
+    height: 10rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+}
+
+header nav ul li:last-child {
+    padding-right: 0;
+}
+
+header nav ul li:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header .showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+header .showcase h2 {
+    font-weight: 700;
+    font-size: 4.7rem;
+    line-height: 5.2rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+header .showcase h3 {
+    max-width: 50%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.main-btn {
+    background: #FDB44B;
+    border: unset;
+    padding: 2.5rem 4.8rem;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.news,
+.courses,
+.teachers,
+.photos,
+.videos,
+.results,
+.testimonial,
+.contact,
+footer {
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.news img,
+.courses img {
+    max-height: 18rem;
+}
+
+.teachers img,
+.testimonial img {
+    max-height: 21rem;
+}
+
+.photos img,
+.videos iframe,
+.contact iframe {
+    height: 27rem;
+    width: 100%;
+    border: none;
+}
+
+.cards .card span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #646464;
+}
+
+.section-name {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #00445B;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.cards .card {
+    width: 33%;
+}
+
+.cards .card .card-text {
+    padding: 3.7rem;
+}
+
+.cards .card .card-text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+.cards .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card button {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.carousel {
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    width: 30%;
+}
+
+.carousel span {
+    display: inline-block;
+    width: 10%;
+    height: 4px;
+    background: #646464;
+    margin: 0 1rem;
+}
+
+.carousel span:first-child {
+    background-color: #00285B;
+}
+
+.courses .cards img {
+    height: 17.8rem;
+}
+
+.courses .card-text p {
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+
+.teachers .cards .card .card-text p:not(:first-child) {
+    margin-block-start: 1rem;
+}
+
+.teachers .card,
+.courses .card {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+}
+
+.photos .cards {
+    flex-wrap: wrap;
+}
+
+.photos .cards .card {
+    width: 30%;
+}
+
+.photos .cards .card img {
+    width: 115%;
+}
+
+/* .photos .cards .card .card-photo:nth-child(1) {
+    background-image: url(./assets/images/image-photos-1.png);
+}
+.photos .cards .card .card-photo:nth-child(2) {
+    background-image: url(./assets/images/image-photos-2.png);
+}
+.photos .cards .card .card-photo:nth-child(3) {
+    background-image: url(./assets/images/image-photos-3.png);
+}
+.photos .cards .card .card-photo:nth-child(4) {
+    background-image: url(./assets/images/image-photos-4.png);
+}
+.photos .cards .card .card-photo:nth-child(5) {
+    background-image: url(./assets/images/image-photos-5.png);
+}
+.photos .cards .card .card-photo:nth-child(6) {
+    background-image: url(./assets/images/image-photos-6.png);
+}
+
+.photos .cards .card .card-photo {
+    display: inline-block;
+    zoom: 1;
+    *display:inline;
+    height: 20rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.results .cards {
+    margin-top: 8%;
+}
+
+.results .cards .card {
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+}
+
+.results .cards .card .card-text {
+    text-align: initial;
+    margin-block-start: -20%;
+}
+
+.results .cards .card img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 35%;
+    height: auto;
+    transform: translateY(-50%);
+    object-fit: none;
+}
+
+.testimonial .cards .card {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+}
+
+.testimonial .cards .card .card-text {
+    padding: 3.7rem 3rem;
+}
+
+.testimonial .cards .card .card-text .rating {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 2rem;
+}
+
+.testimonial .cards .card .card-text ul img {
+    object-fit: contain;
+}
+
+.contact {
+    margin-bottom: 15rem;
+}
+
+.contact .contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    padding-top: 3rem;
+}
+
+.contact .contact-details>a,
+.contact .contact-details>div {
+    max-width: 25%;
+}
+
+.contact .contact-details .location {
+    display: flex;
+}
+
+.contact .contact-details img {
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+.contact .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: #00445B;
+    padding: 5rem 0;
+}
+
+footer form {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    margin-block-end: 2rem;
+    color: white;
+}
+
+footer hr {
+    width: 25%;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    margin-block-start: 5rem;
+    margin-block-end: 4rem;
+}
+
+footer input {
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(100, 100, 100, 0.5);
+}
+
+footer form input[id="name"] {
+    width: 30%;
+}
+
+footer form input[id="phone"] {
+    width: 25%;
+}
+
+footer form input[id="email"] {
+    width: 25%;
+}
+
+footer .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo-container .logo-container-text {
+    text-align: center;
+    width: 15%;
+    color: #FFFFFF;
+}
+
+footer .logo-container .logo-container-text p:first-child {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+
+footer .logo-container .logo-container-text p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+footer .bottomline-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: white;
+}

@@ -1,0 +1,75 @@
+@import "./../variables/colors";
+@import "./../variables/mixins";
+
+header {
+    width: 100vw;
+    height: 100vh;
+
+    .home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2rem;
+        gap: 8rem;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                gap: 2rem;
+
+                li {
+                    // $color, $fontSize, $fontWeight, $lineHeight, $letterSpacing
+                    @include link ($textColor, 14px, 400, 140%, inherit);
+                }
+
+                li:last-child::before {
+                    content: '/';
+                    padding-right: 2rem;
+                    color: $linkColor;
+                }
+            }
+
+            .btn {
+                // $bgColor, $border, $fontSize, $color
+                @include button ($mainColor, none, 2rem, #fff);
+                padding: 3rem 5rem;
+                width: fit-content;
+            }
+        }
+
+        &__right {
+            position: relative;
+
+            figure {
+                img {
+                    border-top-left-radius: 30%;
+                }
+            }
+
+            &>img {
+                position: absolute;
+                max-height: 30%;
+                left: -4rem;
+                bottom: 0;
+                width: initial;
+                height: initial;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .home {
+            grid-template-columns: 1fr;
+
+            &__right {
+                display: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+$font: 'Roboto', sans-serif;
+$color-primary: rgba(30, 30, 30, 1);
+$color-secondary: rgba(229, 132, 17, 1);
+
+// headings
+.section-header {
+    font-size: 5.6rem;
+    line-height: 61.6px;
+}
+
+.section-paragraph {
+    font-size: 1.8rem;
+    line-height: 33.3px;
+}

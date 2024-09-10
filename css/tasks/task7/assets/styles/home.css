@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+header .header-top {
+    background-color: rgb(174, 239, 241);
+}
+
+header .header-top ul {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0;
+}
+
+header .header-top ul li {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0.5rem 4rem;
+    color: white;
+    font-weight: 700;
+}
+
+header .header-top ul li:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.714);
+}
+
+header .header-top ul li:nth-child(2) {
+    background-color: rgba(88, 215, 126, 0.68);
+}
+
+header .header-top ul li:nth-child(3) {
+    background-color: rgba(190, 49, 215, 0.66);
+}
+
+header nav {
+    background-color: rgb(248, 246, 246);
+    padding: 0 1.2rem;
+}
+
+header nav .nav-links li:hover {
+    color: red;
+}
+
+header nav li {
+    vertical-align: middle;
+}
+
+header nav ul:first-child {
+    width: 100%;
+}
+
+header ul .icon-heart, .text-red {
+    color: red;
+}
+
+header ul .icon-heart {
+    font-size: 1em;
+}
+
+header ul i {
+    font-size: 2rem;
+    color: black;
+}
+
+header ul li:last-child {
+    font-size: 1.6rem;
+}
+
+header nav ul:first-child > li:first-child {
+    font-size: 3.4rem;
+}
+
+header nav ul:nth-child(2) {
+    width: 80%;
+    text-align: center;
+}
+
+header nav ul:nth-child(2) li {
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main {
+    text-align: center;
+}
+
+.wrapper {
+    width: 70%;
+}
+
+main h1 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+main h1 i {
+    color: red;
+}
+
+main form {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+main form input {
+    padding-left: 1.5rem;
+    font-size: 2.6rem;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    height: 6rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+main form i {
+    color: rgb(12, 126, 192);
+    position: absolute;
+    right: 2rem;
+    top: 20%;
+    font-size: 4rem;
+}
+
+main .card {
+    vertical-align: top;
+    height: max-content;
+    padding: 1rem 2.5rem;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 3px lightgrey;
+    border-radius: 20px;
+    margin-top: 4rem;
+    font-size: 0;
+}
+
+main div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .card-img {
+    width: 40%;
+}
+
+main .card-body {
+    width: 60%;
+}
+
+main .card-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main .card-body {
+    height: 100%;
+    padding: 0 2rem;
+    text-align: start;
+}
+
+main .card-body h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    color: unset;
+}
+
+main .card-body p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: grey;
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+.about {
+    background-color: rgba(241, 239, 239, 0.718);
+    width: 100%;
+}
+
+.about i {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-search, .about-results, .about-more {
+    width: 33%;
+    padding: 3rem 5rem;
+    font-size: 1.8rem;
+    color: grey;
+    vertical-align: middle;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+    background-color: rgba(65, 62, 62, 0.879);
+    padding-bottom: 6rem;
+}
+
+footer .wrapper {
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+footer .left, footer .middle {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li {
+    display: block;
+    color: white;
+    line-height: 3.4rem;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    color: white;
+}
+
+footer ul li:hover {
+    color: yellowgreen;
+}
+
+footer ul li:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer ul li:not(:first-child) {
+    font-size: 1.8rem;
+}
+
+footer hr {
+    margin: 0 auto;
+    width: 90%; 
+    margin-bottom: 2rem;  
+}
+
+button {
+    position: absolute;
+    right: 3rem;
+    bottom: 1.5rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    border: unset;
+}
+
+button i {
+    color: rgba(65, 62, 62, 0.879);
+    font-size: 2.8rem;
+    padding: 0.4rem 0.8rem;
+    border: unset;
+}

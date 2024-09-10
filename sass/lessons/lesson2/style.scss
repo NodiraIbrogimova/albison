@@ -1,0 +1,60 @@
+$main: blue;
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  width: 2000px;
+  margin: 0 auto;
+}
+@mixin btn($BGrang, $bRadius, $fsz: 22px, $rang: white) {
+  padding: 15px 45px;
+  border-radius: $bRadius;
+  color: $rang;
+  font-size: $fsz;
+  background-color: $BGrang;
+  border: none;
+}
+
+#buy {
+  @include btn(green, 10px, 10px);
+}
+
+#send {
+  @include btn(yellow, 50px);
+}
+
+#delete {
+  @include btn(red, 0);
+}
+
+@mixin card($dir) {
+  display: flex;
+  background-color: gray;
+  height: 300px;
+  flex-direction: $dir;
+}
+
+.card {
+  @include card(row);
+}
+
+.card2 {
+  @include card(row-reverse);
+}
+
+.card3 {
+  @include card(row);
+}
+
+.img {
+  flex-grow: 1;
+  background-color: red;
+}
+
+.text {
+  flex-grow: 1;
+  background-color: yellow;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Creating form</title>
+</head>
+<body>
+    <h1>Information</h1>
+    <form action="">
+
+        <label for="name">Name*: </label>
+        <input id="name" type="text" required placeholder="Example: Alex">
+        <br><br>
+
+        <label for="age">Age*: </label>
+        <input id="age" step="1" type="number" min="10" max="100" required>
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="example@email.com">
+        <br><br>
+
+        <label for="color">Color: </label>
+        <input id="color" type="color">
+        <br><br>
+
+        <label for="birthday">Birthday: </label>
+        <input id="birthday" type="date">
+        <br><br>
+
+        <p><i>Where do you study?</i></p>
+        <label for="school">School</label>
+        <input id="school" type="radio" name="studiesAt" value="school">
+        <br>
+        <label for="college">College</label>
+        <input id="college" type="radio" name="studiesAt" value="college">
+        <br>
+        <label for="university">University</label>
+        <input id="university" type="radio" name="studiesAt" value="university">
+        <br><br>
+
+        <p><i>what kind of <b>sports</b>do you like?</i></p>
+        <label for="football">Football</label>
+        <input id="football" type="checkbox" name="favoriteSport" value="football">
+        <br>
+        <label for="volleyball">Volleyball</label>
+        <input id="volleyball" type="checkbox" name="favoriteSport" value="volleyball">
+        <br>
+        <label for="chess">Chess</label>
+        <input id="chess" type="checkbox" name="favoriteSport" value="chess">
+        <br>
+        <label for="pingpong">Ping pong</label>
+        <input id="pingpong" type="checkbox" name="favoriteSport" value="pingpong">
+        <br><br>
+
+        <textarea name="comments" cols="30" rows="10">Comments:</textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

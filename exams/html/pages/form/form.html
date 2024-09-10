@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+</head>
+
+<body>
+
+    <h1><a href="../../index.html">Home</a> <b>/</b> <a href="../media/media.html"> Media</a></h1>
+
+    <!-- REGISTRATION -->
+    <form action="">
+        <fieldset>
+            <legend><h2>Registration</h2></legend>
+
+            <input type="text" placeholder="username" name="username">
+            <input type="tel" placeholder="phone" name="phone">
+            <br><br>
+
+            <input type="email" placeholder="email" name="email">
+            <input type="password" placeholder="password" name="password">
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    <!-- COMPETITIONS -->
+    <form action="">
+        <fieldset>
+            <legend><h2>Competitions</h2></legend>
+
+            <label for="html">HTML</label>
+            <input id="html" type="checkbox" name="competionName" value="html">
+            <br><br>
+
+            <label for="css">CSS</label>
+            <input id="css" type="checkbox" name="competionName" value="css">
+            <br><br>
+
+            <label for="js">JS</label>
+            <input id="js" type="checkbox" name="competionName" value="js">
+            <br><br>
+
+            <label for="sass">SASS</label>
+            <input id="sass" type="checkbox" name="competionName" value="sass">
+            <br><br>
+
+            <label for="react">REACT</label>
+            <input id="react" type="checkbox" name="competionName" value="react">
+            <br><br>
+
+            <button type="submit">Done</button>
+        </fieldset>
+    </form>
+
+    <!-- QUIZZ -->
+    <form action="">
+        <fieldset>
+            <legend><h2>Quizz</h2></legend>
+            <h3>Which of the following is not a programming language?</h3>
+
+            <label for="html">HTML</label>
+            <input id="html" type="radio" name="choice" value="html">
+            <br><br>
+
+            <label for="js">JS</label>
+            <input id="js" type="radio" name="choice" value="js">
+            <br><br>
+
+            <label for="csharp">C#</label>
+            <input id="csharp" type="radio" name="choice" value="csharp">
+            <br><br>
+
+            <button type="submit">Selected</button>
+        </fieldset>
+    </form>
+    <br><br>
+
+    <!-- MESSAGE -->
+    <textarea name="message" id="message" cols="184" rows="10">message:</textarea>
+</body>
+
+</html>

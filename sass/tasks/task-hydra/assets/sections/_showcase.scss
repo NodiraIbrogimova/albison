@@ -1,0 +1,129 @@
+@import '../variables';
+@import '../slider-buttons';
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__left {
+        flex-basis: 50%;
+        color: #fff;
+        font-weight: 700;
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 48.76px;
+            margin-bottom: 3.6rem;
+
+            .gradient-text {
+                font-size: 4.6rem;
+                line-height: 56.07px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 19.5px;
+            margin-bottom: 6.6rem;
+        }
+
+    }
+
+    &__right {
+        flex-basis: 50%;
+    }
+
+    &__items {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        background: $radial-gradient;
+        padding: 3rem 4rem;
+        border-radius: 9rem;
+        position: relative;
+
+        #arrow-left,
+        #arrow-right {
+            display: none;
+        }
+
+        article {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            gap: 1.4rem;
+            row-gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+
+            &:not(:nth-child(4)) {
+                border-right: 1px solid rgba(192, 183, 232, 0.33);
+                padding-right: 3rem;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 29.26px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 17.07px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .showcase {
+        &__items {
+            article {
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .showcase {
+        display: block;
+    }
+}
+
+@media (max-width: 890px) {
+    .showcase {
+        &__items {
+            display: block;
+
+            #arrow-left,
+            #arrow-right {
+                display: initial;
+            }
+
+            article {
+                &:not(:last-child) {
+                    padding-right: initial;
+                    border-right: initial;
+                }
+            }
+        }
+    }
+}

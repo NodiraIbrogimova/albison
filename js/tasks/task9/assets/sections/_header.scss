@@ -1,0 +1,22 @@
+.header {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    .transparent-layer {
+        position: absolute;
+        height: inherit;
+        width: inherit;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        z-index: 0;
+    }
+
+    .heading-1 {
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,88 @@
+@import '../variables';
+@import '../mixins';
+
+.cards {
+    .card {
+        padding: initial;
+
+        &__text {
+
+            .section-title {
+                @include text(4rem, 500);
+                color: $secondary-color;
+            }
+
+            p {
+                @include text(2rem, 500);
+                margin-bottom: 4rem;
+            }
+
+            .sizes-group {
+                display: flex;
+                margin-bottom: 4rem;
+                gap: 2rem;
+
+                .btn {
+                    @include button(#fff, $text-color, 1px solid $text-color);
+                    padding: .9rem 1.3rem;
+                }
+
+                .btn:nth-child(2) {
+                    @include button($text-color, #fff, transparent);
+                }
+            }
+
+            .colors-group {
+                display: flex;
+                gap: 2rem;
+                margin-bottom: 4rem;
+
+                .btn {
+                    border-radius: 50%;
+                    width: 4.1rem;
+                    max-width: 4.1rem;
+                    aspect-ratio: 1;
+                }
+
+            }
+
+            .add-to-cart {
+                display: flex;
+                align-items: stretch;
+                gap: 2rem;
+
+                input {
+                    padding: 2.2rem 0;
+                    max-width: 20%;
+                }
+
+                .btn {
+                    @include button($main-color, #fff, transparent);
+                    padding: 2.2rem 5rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cards {
+        .card {
+            &__text {
+                padding-right: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .cards {
+        .card {
+            &__text {
+                padding-right: 40%;
+            }
+
+        }
+    }
+}
